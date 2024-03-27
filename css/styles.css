@@ -164,7 +164,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    /* url(../images/people-office.jpg); */ url(../images/bg-mobile.jpg);
+    url(../images/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -972,8 +972,7 @@ img {
     width: calc((100% - 24px * 2) / 3);
   }
 
-.description-wrap {
-  width: 360px;
-}
-
+  .description-wrap {
+    width: 360px;
+  }
 }
