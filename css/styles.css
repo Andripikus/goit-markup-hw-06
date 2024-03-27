@@ -164,8 +164,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    /* url(../images/people-office.jpg); */
-    url(../images/bg-mobile.jpg);
+    /* url(../images/people-office.jpg); */ url(../images/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -214,8 +213,7 @@ img {
 
 .hero-order-btn:hover,
 .hero-order-btn:active,
-/* .hero-order-btn:focus  */
-{
+/* .hero-order-btn:focus  */ {
   background-color: #404bbf;
   font-weight: 600;
   font-size: 16px;
@@ -459,7 +457,8 @@ img {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
+  /* width: 360px; */
+  width: 100%;
   height: 120px;
 }
 
@@ -972,4 +971,9 @@ img {
   .portfolio-list-item {
     width: calc((100% - 24px * 2) / 3);
   }
+
+.description-wrap {
+  width: 360px;
+}
+
 }
