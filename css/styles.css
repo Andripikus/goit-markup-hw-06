@@ -171,6 +171,41 @@ img {
   border: none;
 }
 
+/* MOBILE MENU */
+
+.mob-menu {}
+
+.close-menu-btn {}
+
+.mob-navigation {}
+
+.mob-menu-list {}
+
+.mob-menu-item {}
+
+.mob-menu-link {}
+
+.current {}
+
+.mob-address {}
+
+.mob-address-list {}
+
+.mob-address-item {}
+
+.mob-address-link {}
+
+.mob-icon-list {}
+
+.mob-icon-items {}
+
+.mob-icon-link {}
+
+.mob-social-icon {}
+
+.mob-icon-items {}
+
+
 /* HERO */
 
 .hero {
@@ -499,19 +534,25 @@ img {
 
 .footer {
   background: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-wrapper {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  /* align-items: baseline;
+  justify-content: space-between; */
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-content {
-  margin-right: 120px;
-  max-width: 264px;
+  /* margin-right: 120px; */
+  /* max-width: 264px; */
+  max-width: 288px;
+  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -522,7 +563,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
+  /* display: inline-block; */
+  text-align: center;
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -531,7 +574,6 @@ img {
 }
 
 .promo-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -548,11 +590,15 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  display: block;
+  text-align: center;
 }
 
 .footer-icon-list {
   display: flex;
   gap: 16px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 .footer-icon-items {
@@ -575,16 +621,20 @@ img {
   background-color: #31d0aa;
 }
 
-.features-icon-link:focus {
+/* .features-icon-link:focus {
   background-color: #31d0aa;
-}
+} */
 
 .footer-social-icon {
   fill: #f4f4fd;
 }
 
 .footer-subscribe {
-  margin-left: 80px;
+  /* margin-left: 80px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .subscribe-text {
@@ -598,13 +648,16 @@ img {
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 16px;
+  /* gap: 24px; */
 }
 
 .footer-email-subscribe {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  /* width: 264px; */
+  width: 288px;
   height: 40px;
   background-color: transparent;
   font-size: 12px;
@@ -636,6 +689,7 @@ img {
   color: #fff;
   cursor: pointer;
   border: none;
+  margin: 0 auto;
 }
 
 .subscribe-icon {
@@ -865,12 +919,18 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ===========TABLET============== */
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 
   .team .container {
+    width: 584px;
+  }
+
+  .footer .container {
     width: 584px;
   }
 
@@ -999,7 +1059,46 @@ img {
   .portfolio-list-item {
     width: calc((100% - 24px) / 2);
   }
+
+  /* FOOTER */
+
+  .footer-wrapper {
+    align-items: baseline;
+  }
+
+  .footer-content-social {
+    display: flex;
+  }
+
+  .footer-content {
+    margin-right: 24px;
+    max-width: 264px;
+  }
+
+  .footer-logo {
+    display: inline-block;
+  }
+
+  .social-title {
+    display: flex;
+  }
+
+  .footer-subscribe {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-email-subscribe {
+    width: 264px;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
+
+/* ============DESKTOP================= */
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -1009,6 +1108,10 @@ img {
   .team .container {
     width: 1158px;
   }
+
+    .footer .container {
+      width: 1158px;
+    }
 
   /* HEADER DESKTOP */
 
@@ -1122,4 +1225,30 @@ img {
   .description-wrap {
     width: 360px;
   }
+
+/* FOOTER DESKTOP */
+
+.footer {
+    padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-wrapper {
+    align-items: baseline;
+      justify-content: space-between;
+      flex-direction: row;
+}
+
+.footer-content {
+  margin-right: 120px;
+    max-width: 264px;
+}
+
+.features-icon-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-subscribe {
+  margin-left: 80px;}
+
 }
