@@ -294,9 +294,13 @@ img {
   padding-bottom: 96px;
 }
 
-.features-icon {
+.features-icon-wrapper {
   display: none;
 }
+
+/* .features-icon {
+  display: none;
+} */
 
 .features-list {
   display: flex;
@@ -1082,6 +1086,7 @@ img {
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+    padding: 0 15px;
   }
 
   .team .container {
@@ -1168,9 +1173,9 @@ img {
     margin-bottom: 8px;
   }
 
-  .features-icon {
+  /* .features-icon {
     display: block;
-  }
+  } */
 
   .features-list {
     gap: 24px;
